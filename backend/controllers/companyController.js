@@ -44,7 +44,7 @@ const getCompanies = async (req, res) => {
             pagination: {
                 total,
                 page: Number(page),
-                totalPages: Math.ceil(total / limit)
+                totalPages: Math.ceil(total / limit) || 1
             },
             executionTime
         });

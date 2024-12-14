@@ -36,7 +36,7 @@ const getUsers = async (req, res) => {
       pagination: {
         total,
         page: Number(page),
-        totalPages: Math.ceil(total / limit)
+        totalPages: Math.ceil(total / limit) || 1
       },
       executionTime
     });
@@ -95,7 +95,7 @@ const getClerkUsers = async (req, res) => {
       pagination: {
         total: totalUsers,
         page: Number(page),
-        totalPages: Math.ceil(totalUsers / Number(limit))
+        totalPages: Math.ceil(totalUsers / Number(limit)) || 1
       },
       executionTime
     });
