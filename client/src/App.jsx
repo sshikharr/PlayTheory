@@ -15,7 +15,7 @@ import { ClerkProvider, SignIn } from "@clerk/clerk-react";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import { RequireAuth } from './components/RequireAuth';
-import { TopBar } from './components/TopBar'; 
+import { TopBar } from './components/Topbar'; 
 
 function App() {
   return (
